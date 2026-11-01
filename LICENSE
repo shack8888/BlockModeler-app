@@ -1,0 +1,20 @@
+BlockModeler License / ブロックモデラー 利用規約
+Copyright (c) 2026 My Voxels Inc. / マイボクセル株式会社
+
+[日本語]
+1. このソフトウェア（アプリと、いっしょに入っているファイル）は無料で使えます。個人でも仕事でも使えます。
+2. このソフトウェアで作ったモデルは、作った人の物です。自分のゲームや作品に自由に使えます。
+3. ソフトウェア自体を配り直すこと、売ること、改変した物を配ることはできません。
+4. 無保証です。使ったことで起きたどんな損害についても、作者は責任を負いません。
+5. いっしょに入っている見本のキャラクター（ai/tosappi）はマイボクセル株式会社のキャラクターです。自分の作品には使えません。
+6. three.js と Electron（どちらも MIT ライセンス）を使っています。それぞれのライセンスは LICENSE-three.js.txt などを見てください。
+
+[English]
+1. This software (the app and the files that come with it) is free to use, for personal and commercial purposes.
+2. Models you make with it are yours. Use them freely in your own games and works.
+3. You may not redistribute or sell the software, or distribute modified copies of it.
+4. It is provided "as is", without warranty of any kind. The author is not liable for any damage arising from its use.
+5. The bundled sample character (ai/tosappi) belongs to My Voxels Inc. and may not be used in your own work.
+6. It uses three.js and Electron (both MIT). See LICENSE-three.js.txt and the other license files.
+
+Roblox is a trademark of Roblox Corporation. This software is not affiliated with or endorsed by Roblox Corporation.
