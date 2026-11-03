@@ -23,8 +23,16 @@ I do not write code. I tell Claude Code what I want in plain words, look at the 
    - 体にだけ、Roblox の床のような凹凸を付けて
    - 元の絵からだいぶ変わったので、絵に忠実にして
 
-5. **自分で仕上げる**：アプリの「開く」で `ai/<名前>/<名前>.blockmodel` を開き、形や色、パーツの親子を自分で調整します。
+   言葉で「どこ」を伝えにくい時は、アプリの **赤ペン** を使います。3D の上に 〇 をかいて「もっと大きく」のように書き、保存すると、モデルのとなりに `<名前>.redpen.json` ができます。Claude に「赤ペン見て」と言えば、〇の下の箱の名前と場所つきで読んで直します。
+5. **自分で仕上げる**：アプリの「開く」で `ai/<名前>/<名前>.blockmodel` を開き、形や色、パーツの親子を自分で調整します。「保存」（Ctrl+S）は開いたファイルに上書きします。手で直したあとに Claude に頼む時は、保存してから頼みます。Claude はいちばん新しいファイルから直します。
 6. **Roblox に入れる**：アプリの「Roblox へ書き出す」で作った `.fbx` を、Studio の「3D をインポート」で入れます。アプリで手直ししない時は、Claude が作った `ai/<名前>/<名前>.fbx` をそのまま入れられます。`.glb` は GLB ビューアや Blender で見る用です。
+
+## きれいに作るコツ
+
+- **絵をいきなり 3D にしない**：まず AI に「部品ごとの箱で描きなおして。ばらした図も付けて」と頼みます（`tools/ai/edit_sheet.mjs`・fal.ai の料金がかかります）。部品の分け方が、そのままモデルのパーツ分けになります。
+- **真横と真正面で測る**：ななめの絵 1 枚から奥行きを当てずっぽうにしません。傾きのない向きの絵で、ます目を数えて組んでもらいます。
+- **同じ向きで並べてくらべる**：元の絵とモデルを同じ向きで並べると、ずれがひと目で分かります。
+- **直しは赤ペンで**：〇 と ひと言で、どの箱の話かまで伝わります。
 
 ## はじめ方
 
@@ -78,8 +86,16 @@ Chrome の場所が標準と違う時は、環境変数 `CHROME` に場所を入
    - Put Roblox-style studs on the body only
    - That drifted from the picture, stay faithful to it
 
-5. **Finish by hand**: open `ai/<name>/<name>.blockmodel` with "Open" in the app, then adjust shapes, colors and the part tree.
+   When it is hard to say where in words, use the app's **Red pen**. Circle a spot on the 3D view, write something like "make it bigger" and save. It writes `<name>.redpen.json` next to the model. Tell Claude "check the red pen" and it reads each note with the name of the box under the circle and its position.
+5. **Finish by hand**: open `ai/<name>/<name>.blockmodel` with "Open" in the app, then adjust shapes, colors and the part tree. Save (Ctrl+S) writes back to the file you opened. If you edited by hand, save before asking Claude for more changes, so it works from your newest file.
 6. **Put it in Roblox**: export a `.fbx` with "Export to Roblox" and bring it in with Studio's Import 3D. If you did not edit it in the app, `ai/<name>/<name>.fbx` from Claude works directly. The `.glb` is for GLB viewers and Blender.
+
+## Tips for a clean model
+
+- **Do not go from the picture straight to 3D**: first ask an AI to "redraw it with one box per part, with an exploded view" (`tools/ai/edit_sheet.mjs`, charged by fal.ai). The way it splits the parts becomes the model's part tree.
+- **Measure from straight-on views**: do not guess depth from one angled picture. Have the AI count grid squares on views with no tilt.
+- **Compare from the same angle**: put the picture and the model side by side at the same angle, and the differences stand out.
+- **Use the red pen for fixes**: a circle and a few words tell the AI exactly which box you mean.
 
 ## Getting started
 
