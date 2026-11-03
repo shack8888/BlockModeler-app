@@ -1,1 +1,3 @@
 dist/
+publish.mjs
+make_latest.mjs
