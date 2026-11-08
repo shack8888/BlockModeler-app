@@ -50,9 +50,12 @@ I usually ask [Claude Code](https://claude.com/claude-code) to build models in p
 - 面に色をぬる。木の板・レンガ・Roblox の床のぽっちなどの柄は、三角の数を増やさずに描く
 - 時間ごとのキーで動きを作り、再生する
 - Roblox の三角の上限を見ながら作り、`.fbx` で書き出す（骨と動きも入る）。GLB ビューアや Blender 用の `.glb` も出せる。小物・R15 キャラ・UGC アクセサリーに対応
+- 色を光らせる（色の ☀）。Roblox でも光る所として入る
+- ななめに置いた箱からも「つなぐ」でまっすぐのばして、R で曲げられる
+- 面が重なってちらつく所を数えて、押すと直す札（左下にいつも出る）
 - `.blockmodel` で保存する。パーツ・骨・動き・色・柄がそのまま残る
 
-In short: place and stretch boxes, use 11 angular shapes, group boxes into parts with bones, see the parent-child tree of parts and change it by dragging, paint faces, add patterns without adding triangles, animate with keyframes, and export `.fbx` for Roblox Studio's 3D importer (or `.glb` for GLB viewers and Blender) (props, R15 characters and UGC accessories). Projects are saved as `.blockmodel`.
+In short: place and stretch boxes, use 11 angular shapes, group boxes into parts with bones, see the parent-child tree of parts and change it by dragging, paint faces, add patterns without adding triangles, animate with keyframes, make colors glow (they come into Roblox as emissive), extend and bend boxes with "Link" even from tilted boxes, see and fix flickering faces with one click, and export `.fbx` for Roblox Studio's 3D importer (or `.glb` for GLB viewers and Blender) (props, R15 characters and UGC accessories). Projects are saved as `.blockmodel`.
 
 ### Roblox に入れる時 / Importing into Roblox
 
