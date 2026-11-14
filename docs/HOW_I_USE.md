@@ -15,7 +15,7 @@ I do not write code. I tell Claude Code what I want in plain words, look at the 
 
    > ai/mychar/ref.png の絵を見て、グループに分けて組んでください。歩く動きも付けてください。
 
-   アプリの右上の **AI と つくる** を押すと、組み方を 3 つから選べます（はやい 約 10 分／ふつう 約 17 分／ていねい 約 21 分。同じ絵から組んだ見本つき。時間は めやすです）。選んで「AI に たのむ文を コピー」を押し、Claude に貼りつけて、絵を渡します。はやい は ひな形から組むので、頭と体が四角く残ります。それぞれの手順は [BUILD_STYLES.md](BUILD_STYLES.md) にあります。
+   アプリの右上の **AI と つくる** からも頼めます。まず作りたい物の絵を入れます（絵をドラッグするか「ファイルを 選ぶ」）。絵が入ると、組み方を 3 つから選べます（はやい 約 10 分／ふつう 約 17 分／ていねい 約 21 分。同じ絵から組んだ見本つき。時間は めやすです）。選んで「AI に たのむ文を コピー」を押し、Claude に貼りつけます。入れた絵は「参考の絵」としてアプリに残り、下の「アプリと直接つなぐ（MCP）」でつないだ Claude がアプリから読むので、絵を別に渡す必要はありません。はやい は 大きなブロックで手早く組むので、頭と体が四角く残ります。それぞれの手順は [BUILD_STYLES.md](BUILD_STYLES.md) にあります。
 
 3. **絵と見くらべる**：Claude が `ai/<名前>/compare.png` を作ります。上が元の絵、下が作ったモデルです。
 
@@ -39,7 +39,7 @@ I do not write code. I tell Claude Code what I want in plain words, look at the 
 2. 出てきた案内の「1行を コピー」を押し、Claude Code に貼って Enter を押します。はじめの 1 回だけです（アプリのフォルダを動かした時はもう一度）。
 3. Claude Code で新しいチャットを始めて、「ブロックモデラーで 赤いドラゴンを作って」のように頼みます。組む様子がアプリに出ます。
 4. 作りたい物の絵があれば、先に 3D の上に落とすか Ctrl+V で貼ります（右下の「参考の絵」）。前・横・後ろなどの向きを選んでおくと、Claude はその絵を見て組み、同じ向きで見くらべて直します。絵はモデルのとなりの `<名前>.refs` フォルダに残ります。
-5. スイッチの上の「AI が使う形」で、Claude が組む時に使うブロックの形を選べます（ぜんぶ／四角だけ／四角＋三角）。同じ物でも、選ぶ形でデザインの感じが変わります。自分で置く形はそのままです。
+5. スイッチの上の「AI が使う形」で、Claude が組む時に使うブロックの形を選べます（形のアイコンを押すたびにオン／オフ。うすい形は使いません）。同じ物でも、選ぶ形でデザインの感じが変わります。自分で置く形はそのままです。
 
 つなぎ口はこの PC の中（127.0.0.1）だけで、スイッチがオフの間は開きません。保存と書き出しは、頼んだ時だけ Claude がします。
 
@@ -95,7 +95,7 @@ Chrome の場所が標準と違う時は、環境変数 `CHROME` に場所を入
 
    > Look at ai/mychar/ref.png and build it in groups. Add a walking animation too.
 
-   **Build with AI** at the top right of the app offers three build styles: Fast (about 10 minutes), Standard (about 17) and Careful (about 21), each shown with the same character built that way. The times are a rough guide. Pick one, press "Copy the request for your AI", paste it to Claude and give it your picture. Fast starts from a template, so the head and body stay boxy. The steps of each style are in [BUILD_STYLES.md](BUILD_STYLES.md).
+   You can also ask from **Build with AI** at the top right of the app. First put in a picture of what you want (drag it in, or press "Choose a file"). Once a picture is in, it offers three build styles: Fast (about 10 minutes), Standard (about 17) and Careful (about 21), each shown with the same character built that way. The times are a rough guide. Pick one, press "Copy the request for your AI" and paste it to Claude. The picture stays in the app as a reference picture, and a Claude connected as in "Connect the app directly (MCP)" below reads it from the app, so you do not have to hand the picture over yourself. Fast builds quickly from big blocks, so the head and body stay boxy. The steps of each style are in [BUILD_STYLES.md](BUILD_STYLES.md).
 
 3. **Compare**: Claude makes `ai/<name>/compare.png`, with the picture on top and the model below.
 
@@ -119,7 +119,7 @@ Besides the flow above, Claude Code can build right inside the open app. No Node
 2. In the panel that appears, press "Copy the line", paste it into Claude Code and press Enter. Only the first time (and again if you move the app's folder).
 3. Start a new chat in Claude Code and ask something like "Make a red dragon in BlockModeler". You see it being built in the app.
 4. If you have pictures of what you want, drop them onto the 3D view or paste them with Ctrl+V first ("Reference" at the bottom right). Choose their direction (front, side, back…): Claude looks at them while building and compares from the same angle to fix it. The pictures stay in a `<name>.refs` folder next to the model.
-5. "Shapes for AI" above the switch lets you choose which block shapes Claude may use when it builds (All / Box only / Box + triangles). The same thing gets a different look depending on the shapes. Shapes you place yourself are not limited.
+5. "Shapes for AI" above the switch lets you choose which block shapes Claude may use when it builds (click a shape icon to switch it on or off; faint ones are not used). The same thing gets a different look depending on the shapes. Shapes you place yourself are not limited.
 
 The connection stays inside this PC (127.0.0.1) and is closed while the switch is off. Claude saves and exports only when you ask.
 

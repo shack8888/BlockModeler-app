@@ -72,7 +72,7 @@ I usually ask [Claude Code](https://claude.com/claude-code) to build models in p
 1. 3D の右下の「AI とつなぐ（MCP）」を押してオンにします（ふだんはオフです）。
 2. 出てきた案内の「1行を コピー」を押し、Claude Code に貼って Enter を押します（はじめの 1 回だけ。アプリのフォルダを動かした時はもう一度）。
 3. Claude Code で新しいチャットを始めて、「ブロックモデラーで 赤いドラゴンを作って」のように頼みます。組む様子がアプリに出ます。
-4. オンの間は、スイッチの上の「AI が使う形」で、AI が組む時に使うブロックの形を選べます（ぜんぶ／四角だけ／四角＋三角）。同じ物でも、選ぶ形でデザインの感じが変わります。自分で置く形はそのままです。
+4. オンの間は、スイッチの上の「AI が使う形」で、AI が組む時に使うブロックの形を選べます（形のアイコンを押すたびにオン／オフ。うすい形は使いません）。同じ物でも、選ぶ形でデザインの感じが変わります。自分で置く形はそのままです。
 
 つなぎ口はこの PC の中（127.0.0.1）だけで、オフの間は開きません。
 
@@ -81,7 +81,7 @@ From 1.4.0, Claude Code can build right inside the open app. Nothing else (such 
 1. Click "Connect AI (MCP)" at the bottom right of the 3D view to turn it on (it is off by default).
 2. In the panel that appears, press "Copy the line", paste it into Claude Code and press Enter (first time only; again if you move the app's folder).
 3. Start a new chat in Claude Code and ask something like "Make a red dragon in BlockModeler". You see it being built in the app.
-4. While it is on, "Shapes for AI" above the switch lets you choose which block shapes the AI may use (All / Box only / Box + triangles). The same thing gets a different look depending on the shapes. Shapes you place yourself are not limited.
+4. While it is on, "Shapes for AI" above the switch lets you choose which block shapes the AI may use (click a shape icon to switch it on or off; faint ones are not used). The same thing gets a different look depending on the shapes. Shapes you place yourself are not limited.
 
 The connection stays inside this PC (127.0.0.1) and is closed while the switch is off.
 
@@ -99,7 +99,7 @@ The connection stays inside this PC (127.0.0.1) and is closed while the switch i
 - 面が重なってちらつく所を数えて、左下の「ちらつき」を押すと直る
 - `.blockmodel` で保存する。グループ・骨・動き・色・柄がそのまま残る
 - 「参考の絵」：作りたい物の絵（前・横・後ろなど）を 3D の上に落とすか Ctrl+V で貼ると、右下に並び、押すと大きく見られる。絵はモデルのとなりの `<名前>.refs` フォルダに残る。AI とつないでいる時は、AI もその絵を見て組む
-- 「AI とつなぐ（MCP）」：Claude Code などの AI が、開いているアプリのモデルを直接組む（この PC の中だけ・ふだんはオフ）。AI が使う形（ぜんぶ／四角だけ／四角＋三角）も選べる
+- 「AI とつなぐ（MCP）」：Claude Code などの AI が、開いているアプリのモデルを直接組む（この PC の中だけ・ふだんはオフ）。AI が使う形も、形のアイコンを押して選べる
 
 In short: place and stretch boxes, use 11 angular shapes, group boxes with bones, see the parent-child tree of groups and change it by dragging, paint faces, add patterns without adding triangles, animate with keyframes, make colors glow (they come into Roblox as emissive), extend and bend boxes with "Link" even from tilted boxes, see and fix flickering faces with one click, and export `.fbx` for Roblox Studio's 3D importer (or `.glb` for GLB viewers and Blender) (props, R15 characters and UGC accessories). Projects are saved as `.blockmodel`. "Reference" keeps pictures of what you want (front, side, back…): drop them onto the 3D view or paste them with Ctrl+V, and they stay in a `<name>.refs` folder next to the model. "Connect AI (MCP)" lets an AI such as Claude Code build in the open app (only inside this PC, off by default), and it looks at your reference pictures too. You can also choose which shapes the AI uses (All / Box only / Box + triangles).
 
