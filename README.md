@@ -73,6 +73,7 @@ I usually ask [Claude Code](https://claude.com/claude-code) to build models in p
 2. 出てきた案内の「1行を コピー」を押し、Claude Code に貼って Enter を押します（はじめの 1 回だけ。アプリのフォルダを動かした時はもう一度）。
 3. Claude Code で新しいチャットを始めて、「ブロックモデラーで 赤いドラゴンを作って」のように頼みます。組む様子がアプリに出ます。
 4. オンの間は、スイッチの上の「AI が使う形」で、AI が組む時に使うブロックの形を選べます（形のアイコンを押すたびにオン／オフ。うすい形は使いません）。同じ物でも、選ぶ形でデザインの感じが変わります。自分で置く形はそのままです。
+5. Claude が直すと、3D の下に「前｜後」が出ます。「前」を押すと直す前の形、「後」を押すといまの形が見られます（「前」を出している間は、形を変えられません。保存されるのは、いつもいまの形です）。
 
 つなぎ口はこの PC の中（127.0.0.1）だけで、オフの間は開きません。
 
@@ -82,6 +83,7 @@ From 1.4.0, Claude Code can build right inside the open app. Nothing else (such 
 2. In the panel that appears, press "Copy the line", paste it into Claude Code and press Enter (first time only; again if you move the app's folder).
 3. Start a new chat in Claude Code and ask something like "Make a red dragon in BlockModeler". You see it being built in the app.
 4. While it is on, "Shapes for AI" above the switch lets you choose which block shapes the AI may use (click a shape icon to switch it on or off; faint ones are not used). The same thing gets a different look depending on the shapes. Shapes you place yourself are not limited.
+5. After Claude edits the model, "Before | After" appears under the 3D view. Press "Before" to see the shape before the edit and "After" to see the current shape (while "Before" is on, you cannot change the shape; what gets saved is always the current shape).
 
 The connection stays inside this PC (127.0.0.1) and is closed while the switch is off.
 

@@ -19,7 +19,7 @@ I do not write code. I tell Claude Code what I want in plain words, look at the 
 
 3. **絵と見くらべる**：Claude が `ai/<名前>/compare.png` を作ります。上が元の絵、下が作ったモデルです。
 
-   モデルをアプリで開いたままにしておくと、Claude が組み直すたびに、開き直さなくても新しい形が出ます。増えたブロックは順に出て、3D の下に帯が出ます。帯の「止める」で止めて、「AI に ひとこと」に気づいた事を書いて「送る」を押すと、Claude の次の組み立てで伝わります。自分で直している途中の窓は、勝手に置きかわりません（帯に「読みこむ」が出ます）。
+   モデルをアプリで開いたままにしておくと、Claude が組み直すたびに、開き直さなくても新しい形が出ます。増えたブロックは順に出て、3D の下に帯が出ます。帯の「止める」で止めて、「AI に ひとこと」に気づいた事を書いて「送る」を押すと、Claude の次の組み立てで伝わります。帯の「前｜後」を押すと、Claude が直す前の形といまの形を行き来して見くらべられます（「前」を出している間は、形を変えられません。保存されるのは、いつもいまの形です）。自分で直している途中の窓は、勝手に置きかわりません（帯に「読みこむ」が出ます）。
 4. **言葉で直す**：気になった所を、そのまま伝えます。私が実際に頼んだのは、たとえばこんな言葉です。
 
    - 角を丸めなくていいよ
@@ -99,7 +99,7 @@ Chrome の場所が標準と違う時は、環境変数 `CHROME` に場所を入
 
 3. **Compare**: Claude makes `ai/<name>/compare.png`, with the picture on top and the model below.
 
-   Keep the model open in the app and each rebuild shows up without reopening: the new blocks appear one by one, and a bar appears under the 3D view. Press "Pause", type what you noticed into "A note for the AI" and press "Send": Claude gets it on its next build. A window you are editing is never replaced by itself; the bar offers "Load" instead.
+   Keep the model open in the app and each rebuild shows up without reopening: the new blocks appear one by one, and a bar appears under the 3D view. Press "Pause", type what you noticed into "A note for the AI" and press "Send": Claude gets it on its next build. Press "Before" and "After" on the bar to switch between the shape before Claude's edit and the current shape (while "Before" is on, you cannot change the shape; what gets saved is always the current shape). A window you are editing is never replaced by itself; the bar offers "Load" instead.
 4. **Ask for changes in plain words**, such as:
 
    - No need to round the corners
